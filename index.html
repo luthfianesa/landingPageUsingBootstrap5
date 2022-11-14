@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Link -->
+      <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- File style.css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/bdc7208a67.js" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark">
+      <div class="container-fluid">
+        <img class="nav-img" src="https://wingman.mediumra.re/assets/img/logo-white.svg" alt="" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="overview nav-link active text-light" aria-current="page" href="#">Overview</a>
+            </li>
+            <div class="dropdown">
+              <button class="btn-pages btn btn-secondary dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Pages</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Landing Pages</a></li>
+                <li><a class="dropdown-item" href="#">App Pages</a></li>
+                <li><a class="dropdown-item" href="#">Inner Pages</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn-components btn btn-secondary dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Components</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                <li><a class="dropdown-item" href="#">Wingman</a></li>
+              </ul>
+            </div>
+          </ul>
+          <div class="signup-signin nav-item">
+            <a class="navbar-text text-light" href="#">Sign up </a>
+            <span>or</span>
+            <a class="navbar-text text-light" href="#">Sign in </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="main-container">
+      <section class="section-header bg-dark space-lg" data-jarallax data-speed="0.2">
+        <img class="first-img bg-image" src="https://wingman.mediumra.re/assets/img/graphic-bg-clouds-2.png" alt="Image" />
+        <div class="container container-header">
+          <div class="row align-items-center justify-content-between">
+            <div class="header-heading col-12 col-md-6 col-lg-5 section-intro">
+              <h1 class="heading display-3 text-light">
+                Build a <br />
+                stunning <br />
+                website
+              </h1>
+              <span class="subHeading lead"
+                >A robust suite of styled components, powered <br />
+                by Bootstrap 4. Ready to take your website or <br />
+                App up a notch?
+              </span>
+            </div>
+            <!-- End of col -->
+            <div class="col-12 col-md-6 col-lg-5 form-header">
+              <div class="card">
+                <div class="form-cardBody card-body">
+                  <form>
+                    <div class="placeholder-header-1 form-group">
+                      <label class="username" for="exampleInputUsername">Username</label>
+                      <input type="text" class="placeholder-username form-control form-control-lg" id="exampleInputUsername" placeholder="Pick a username" />
+                    </div>
+
+                    <div class="placeholder-header-2 form-group">
+                      <label class="email" for="exampleInputEmail">Email Address</label>
+                      <input type="email" class="placeholder-email form-control form-control-lg" id="exampleInputEmail" placeholder="Enter email" />
+                      <small class="smallText-Email">We'll never share your email with anyone else.</small>
+                    </div>
+
+                    <div class="placeholder-header-3 form-group">
+                      <label class="password" for="exampleInputUsername">Password</label>
+                      <input type="password" class="placeholder-password form-control form-control-lg" id="exampleInputPassword" placeholder="Password" />
+                    </div>
+
+                    <div class="mb-3">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="checkbox-terms-conditions custom-control-input" value="agree" name="agree-terms" id="check-agree" />
+                        <label for="check-agree" class="terms-conditions custom-control-label text-small">I agree to the <a href="#">Terms & Conditions</a></label>
+                      </div>
+                    </div>
+                    <button type="submit" class="sign-up btn btn-lg btn-success btn-block"><span>Sign up for Wingman</span></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of row -->
+        </div>
+        <!-- End of container -->
+      </section>
+      <!-- End of section -->
+    </div>
+
+    <!-- Meet The Future -->
+    <section class="section2">
+      <div class="section2-container container aos-init aos-animate" data-aos="fade-up">
+        <div class="row justify-content-center text-center section-intro">
+          <div class="section2-col col-12 col-md-9 col-lg-8">
+            <span class="meetTheFuture title-decorative aos-init aos-animate" data-aos="fade-up" data-aos-delay="10">MEET THE FUTURE</span>
+            <h2 class="introducing display-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">Introducing a new way</h2>
+            <span class="opportunity lead aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"
+              >An opportunity to introduce the major benefits of br your product and set the <br />
+              scene for what's to come</span
+            >
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-sm-10">
+            <div class="video-cover rounded">
+              <img src="https://wingman.mediumra.re/assets/img/photo-woman-kitchen.jpg" alt="Image" class="bg-image" width="616" />
+              <div class="section2-divIcon video-play-icon">
+                <i class="fa fa-play-circle" aria-hidden="true"></i>
+              </div>
+              <div class="embed-responsive embeded-responsive-16by9">
+                <iframe class="embed-responsive-item" data-src="https:/www.youtube.com/embed/oYqvpjKJZkU?autoplay=1&mute=1&showinfo=0&rel=0" allowfullscreen></iframe>
+              </div>
+              <!-- End of video cover -->
+            </div>
+            <!-- End of col -->
+          </div>
+          <!-- End of row -->
+          <div class="row justify-content-center text-center section-outro">
+            <div class="section2-bottom-text col-lg-4 col-md-5">
+              <h6>Introducing a new way</h6>
+              <p>
+                "An opportunity to introduce the major benefits of <br />
+                your product and set the scene for what's to come"
+              </p>
+              <a href="#">View more features ></a>
+            </div>
+            <!-- End of col -->
+          </div>
+          <!-- End of row -->
+        </div>
+        <!-- End of container -->
+      </div>
+      <!-- End of section -->
+    </section>
+
+    <!-- Section 3 - Welcome Home -->
+    <section class="section3">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="row justify-content-center text-center section-intro">
+          <div class="col-12 col-md-9 col-lg-8">
+            <span class="welcomeHome title-decorative aos-init aos-animate" data-aos="fade-up" data-aos-delay="10">WELCOME HOME</span>
+            <h2 class="greatlySimplified display-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">Greatly Simplified Workflow</h2>
+            <span class="anOpportunity lead aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"
+              >An opportunity to introduce the major benefits of your product and set the <br />
+              scene for what's to come</span
+            >
+          </div>
+          <!-- End of col -->
+        </div>
+        <!-- End of row -->
+        <div class="section3-middle row justify-content-around">
+          <div class="col-md-5 col-7 mb-4">
+            <div class="tab-content">
+              <div class="section3" >
+                <img src="https://wingman.mediumra.re/assets/img/graphic-desktop.svg" alt="Image" class="img-fluid w-100" />
+              </div>
+              <div class="tab-pane fade" id="content-2" role="tabpanel">
+                <img src="https://wingman.mediumra.re/assets/img/graphic-fingerprint.svg" alt="Image" class="img-fluid w-100" />
+              </div>
+              <div class="tab-pane fade" id="content-3" role="tabpanel">
+                <img src="https://wingman.mediumra.re/assets/img/graphic-envelope.svg" alt="Image" class="img-fluid w-100" />
+              </div>
+            </div>
+          </div>
+          <!-- End of col -->
+          <div class="section3-div-ul col-lg-5 col-md-8 mb-4">
+            <ul class="nav nav-cards" role="tablist">
+              <li class="section3-cardOne-li">
+                <a class="txt-link card active" href="#content-1" data-toggle="tab" role="tab" aria-controls="content-1" aria-selected="true">
+                  <div class="section3-cardOneBody card-body">
+                    <div class=" media align-items-center">
+                      <div class="number-1  step-circle mr-6"><span>1</span></div>
+                      <div class="section3-card media-body">
+                        <h5 class="heading">Create an account</h5>
+                        <span class="text"
+                          >It's even easier than it sounds, you just <br />
+                          need an email address
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="section3-cardTwo-li">
+                <a class="txt-link card" href="#content-2" data-toggle="tab" role="tab" aria-controls="content-2" aria-selected="false">
+                  <div class="section3-cardTwoBody card-body">
+                    <div class="circle media align-items-center">
+                      <div class="number-2 step-circle mr-4"><span>2</span></div>
+                      <div class="section3-card media-body">
+                        <h5 class="heading">Start a project</h5>
+                        <span class="text">With tons of tutorials and examples, this part is even easier than the last </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="section3-cardThree-li">
+                <a class="txt-link card" href="#content-3" data-toggle="tab" role="tab" aria-controls="content-3" aria-selected="false">
+                  <div class="section3-cardThreeBody card-body">
+                    <div class="circle media align-items-center">
+                      <div class="number-3 step-circle mr-4"><span>3</span></div>
+                      <div class="section3-card media-body">
+                        <h5 class="heading">Deploy and conquer</h5>
+                        <span class="text">That was easy, right? Now it's time to deploy that badboy and let the world know </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End of col -->
+        </div>
+        <!-- End of row -->
+      </div>
+      <!-- End of container -->
+    </section>
+    <!-- End of section -->
+
+    <!-- Section 4 - Synced for your convenience -->
+    <section class="section4-syncForYourConvenience fullwidth-split">
+      <div class="section4-syncForYourConvenience-container container-fluid">
+        <div class="section4-row-1 row no gutters">
+          <div class="col-12 col-sm-5 col-lg-6 order-sm-2 fullwidth-split-image">
+            <img class="section4-bgImage-1 bg-image" src="https://wingman.mediumra.re/assets/img/photo-woman-writing.jpg" alt="Image" width="634" />
+          </div>
+          <!-- End of col -->
+          <div class="section4-col-1 col-12 col-sm-7 col-lg-6 order-sm-1 fullwidth-split-text">
+            <div class="col-12 col-sm-8">
+              <h3 class="section4-heading h1 aos-init aos-animate" data-aos="fade-up">Synced for your <br> convenience</h3>
+              <span class="section4-subHeading lead aos-init aos-animate" data-aos="fade-up">Fuss-free and simple to use</span>
+              <hr class="short" />
+              <ul class="section-4-ul  feature-list feature-list-sm">
+                <li>
+                  <div class="media aos-init aos-animate" data-aos="fade-up">
+                    <i class="section4-icon fa fa-hand-spock-o" aria-hidden="true"></i>
+                    <div class="section4-card media-body">
+                      <h6>Media</h6>
+                      <p>A short description of the aforementioned facet to easily digest. No <br> need to divulge too much information in this text area</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media aos-init aos-animate" data-aos="fade-up">
+                    <i class="section4-icon fa fa-stack-exchange" aria-hidden="true"></i>
+                    <div class="section4-card media-body">
+                      <h6>Cards</h6>
+                      <p>Another brief description of a facet that, as before, doesn't need to <br> go into great detail</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="txt-learnMoreAboutSync text-small aos-init aos-animate" data-aos="fade-up">Learn more about Sync ></a>
+            </div>
+          </div>
+          <!-- End of col -->
+        </div>
+        <!-- End of row -->
+      </div>
+      <!-- End of container -->
+    </section>
+    <!-- End of section -->
+
+    <!-- It's everything, all in one place -->
+    <section class="section4-itsEverything fullwidth-split">
+      <div class="section4-itsEverything-container fluid">
+        <div class="section4-row-2 row no-gutters">
+          <div class="col-12 col-sm-5 col-lg-6 fullwidth-split-image">
+            <img class="section4-bgImage-2 bg-image" src="https://wingman.mediumra.re/assets/img/photo-man-phone.jpg" alt="Image"  />
+          </div>
+          <!-- End of col -->
+          <div class="col-12 col-sm-7 col-lg-6 fullwidth-split-text">
+            <div class="section4-col-2 col-12 col-sm-8">
+              <h3 class="section4-heading h1 aos-init aos-animate" data-aos="fade-up">It's everything, all in one place</h3>
+              <span class="section4-subHeading lead">Unifying your team's workflow</span>
+              <hr class="short" />
+              <ul class="section-4-ul feature-list feature-list-sm">
+                <li>
+                  <div class="media aos-init aos-animate" data-aos="fade-up">
+                    <i class="section4-icon fa fa-picture-o" aria-hidden="true"></i>
+                    <div class="section4-card media-body">
+                      <h6>Images</h6>
+                      <p>A short description of the aforementioned facet to easily digest. No need to divulge too much information in this text area</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media aos-init aos-animate" data-aos="fade-up">
+                    <i class="section4-icon fa fa-book" aria-hidden="true"></i>
+                    <div class="section4-card media-body">
+                      <h6>Notes</h6>
+                      <p>Another brief description of a facet that, as before, doesn't need to go into great detail</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="txt-learnMoreAboutSync text-small aos-init aos-animate" data-aos="fade-up">Learn more about Workflow ></a>
+            </div>
+          </div>
+          <!-- End of col -->
+        </div>
+        <!-- End of row -->
+      </div>
+      <!-- End of container -->
+    </section>
+    <!-- End of section -->
+
+    <!-- Case Studies -->
+    <section class="section5-caseStudies">
+      <div class="container-caseStudies container">
+        <div class="row justify-content-center text-center section-intro">
+          <div class="caseStudies-col col-12 col-md-9 col-lg-8">
+            <span class="txt-section-caseStudies title-decorative aos-init aos-animate" data-aos="fade-up" data-aos-delay="10">CASE STUDIES</span>
+            <h2 class="display-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">They came, they conquered</h2>
+            <span class="caseStudies-txt-span2 lead aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">An opportunity to introduce the major benefits of your product and set the <br> scene for what's to come </span>
+          </div>
+          <!-- End of col -->
+        </div>
+        <!-- End of row -->
+        <div class="card-row-caseStudies row">
+          <div class="card-pitStop col-12 col-sm-6 col-md-4">
+            <div class="card card-lg">
+              <a href="#">
+                <img src="https://wingman.mediumra.re/assets/img/photo-couple-couch.jpg" alt="Pit Stop" class="card-img-top" />
+              </a>
+              <div class="card-body-caseStudies card-body">
+                <h4 class="card-title">Pit Stop</h4>
+                <p class="card-text">Pitstop launched their MVP in under <br> 3 months with Wingman</p>
+                <a href="#">Read their story ></a>
+              </div>
+            </div>
+          </div>
+          <!-- End of col -->
+          <div class="card-bench col-12 col-sm-6 col-md-4">
+            <div class="card card-lg">
+              <a href="#">
+                <img src="https://wingman.mediumra.re/assets/img/photo-man-book.jpg" alt="Bench" class="card-img-top" />
+              </a>
+              <div class="card-body-caseStudies card-body">
+                <h4 class="card-title">Bench</h4>
+                <p class="card-text">Bench built their business-facing <br> invoicing system with Wingman</p>
+                <a href="#">Read their story ></a>
+              </div>
+            </div>
+          </div>
+          <!-- End of col -->
+          <div class="card-movend col-12 col-sm-6 col-md-4">
+            <div class="card card-lg">
+              <a href="#">
+                <img src="https://wingman.mediumra.re/assets/img/photo-man-box.jpg" alt="Movend" class="card-img-top" />
+              </a>
+              <div class="card-body-caseStudies-movend card-body">
+                <h4 class="card-title">Movend</h4>
+                <p class="card-text">Movend delivered their customers a more streamlined moving experience</p>
+                <a href="#">Read their story ></a>
+              </div>
+            </div>
+          </div>
+          <!-- End of col -->
+        </div>
+        <!-- End of row -->
+      </div>
+      <!-- End of container -->
+    </section>
+    <!-- End of section -->
+
+    <!-- 30 Day Trial -->
+    <section class="bg-white">
+      <div class="container-3oDayTrial container">
+        <div class="row section-intro">
+          <div class="col text-center">
+            <h3 class="text-h1 h1">Don't wait, sign up now for a 30 day trial</h3>
+          </div>
+          <!-- End of col -->
+        </div>
+        <!-- End of row -->
+        <form>
+          <div class="row">
+            <div class="placeholder-col col-12 col-sm-6 col-lg-3">
+              <div class="placeholder-30DayTrial-username form-group">
+                <label class="txt-label" for="username">Username</label>
+                <input id="username" type="text" class="placeholder-30DayTrial form-control form-control-lg" placeholder="Pick a username" />
+              </div>
+            </div>
+
+            <div class="placeholder-col col-12 col-sm-6 col-lg-3">
+              <div class="placeholder-30DayTrial-email form-group">
+                <label class="txt-label" for="email">Email Address</label>
+                <input id="email" type="email" class="placeholder-30DayTrial form-control form-control-lg" placeholder="you@domain.com" />
+              </div>
+            </div>
+
+            <div class="placeholder-col col-12 col-sm-6 col-lg-3">
+              <div class="placeholder-30DayTrial-password form-group">
+                <label class="txt-label" for="password">Password</label>
+                <input id="password" type="password" class="placeholder-30DayTrial form-control form-control-lg" placeholder="Choose a password" />
+                <small class="small-Txt-30DayTrial form-text">At least seven letters with one numeral</small>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="btnSignUp-background form-group">
+                <label for="button">&nbsp;</label>
+                <button id="button" type="submit" class="txt-signUpForWingman btn btn-lg btn-block">Sign up for Wingman</button>
+              </div>
+            </div>
+          </div>
+          <!-- End of row -->
+        </form>
+      </div>
+      <!-- End of container -->
+    </section>
+    <!-- End of section -->
+
+    <!-- Handy Announcement Bar -->
+    <section class="section-handyAnnouncement space-xs text-center text-light">
+      <div class="container-handyAnnouncement container">
+        <div class="row">
+          <div class="handyAnnouncement-col col">
+            <!-- <i class="mr-1 icon-cake"> </i> -->
+            <span class="handyAnnouncement-text mr-2"><i class="fa fa-birthday-cake" aria-hidden="true"></i> Use this handy announcement bar to talk about new features</span>
+            <a href="#" class="viewChangelog text-white">View changelog ></a>
+          </div>
+          <!-- End of col -->
+        </div>
+        <!-- End of row -->
+      </div>
+      <!-- End of container -->
+    </section>
+    <!-- End of section -->
+
+    <!-- Footer -->
+    <footer class="bg-gray text-light footer-long">
+      <div class="footer-container">
+        <div class="row">
+          <div class="copyright col-12 col-md-3">
+            <img class="mb-4" src="https://wingman.mediumra.re/assets/img/logo-white.svg" alt="Image" />
+            <p>© 2019 Medium Rare <br />Template available exclusively <br />at Bootstrap Themes</p>
+          </div>
+          <!-- End of col -->
+          <div class="col-12 col-md-9">
+            <span class="heading-footer h5"> A robust suite of styled components for Bootstrap 4 </span>
+            <div class="row no-gutters">
+              <div class="footer-navigate col-6 col-lg-3">
+                <h6 class="heading-list-footer">Navigate</h6>
+                <ul class="list-unstyled">
+                  <li class="list-footer"><a href="index.html">Overview</a></li>
+                  <li class="list-footer"><a href="index.html">Landing Pages</a></li>
+                  <li class="list-footer"><a href="index.html">App Pages</a></li>
+                  <li class="list-footer"><a href="index.html">Inner Pages</a></li>
+                </ul>
+              </div>
+              <!-- End of col -->
+
+              <div class="footer-platform col-6 col-lg-3">
+                <h6 class="heading-list-footer">Platform</h6>
+                <ul class="list-unstyled">
+                  <li class="list-footer"><a href="index.html">Mac OS & iOS</a></li>
+                  <li class="list-footer"><a href="index.html">Android & Chrome OS</a></li>
+                  <li class="list-footer"><a href="index.html">Windows</a></li>
+                  <li class="list-footer"><a href="index.html">Linux</a></li>
+                </ul>
+              </div>
+              <!-- End of col -->
+
+              <div class="footer-community col-6 col-lg-3">
+                <h6 class="heading-list-footer">Community</h6>
+                <ul class="list-unstyled">
+                  <li class="list-footer"><a href="index.html">Forum</a></li>
+                  <li class="list-footer"><a href="index.html">Knowledgebase</a></li>
+                  <li class="list-footer"><a href="index.html">Hire An Expert</a></li>
+                  <li class="list-footer"><a href="index.html">FAQ</a></li>
+                  <li class="list-footer"><a href="index.html">Contact</a></li>
+                </ul>
+              </div>
+              <!-- End of col -->
+
+              <div class="footer-company col-6 col-lg-3">
+                <h6 class="heading-list-footer">Company</h6>
+                <ul class="list-unstyled">
+                  <li class="list-footer"><a href="index.html">About Company</a></li>
+                  <li class="list-footer"><a href="index.html">History</a></li>
+                  <li class="list-footer"><a href="index.html">Team</a></li>
+                  <li class="list-footer"><a href="index.html">Invesment</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Script -->
+      <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
